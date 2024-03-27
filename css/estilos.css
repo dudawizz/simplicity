@@ -115,9 +115,17 @@ nav h2 a:hover, nav h2 a:focus, .links-menu a:hover, .links-menu a:focus {
     background-attachment: fixed;
     
     /* Versão 1: pode juntar cor e centro do texto dentro do próprio destaque. */
+}
+    
+.destaque h2, .destaque p {
     color: var(--cor-clara);
     text-align: center;
+
+    /* Etapa 2: aplicar a duração */
+    animation-name: animaDestaque;
+    animation-duration: 2s;
 }
+
 
 /* Versão 2: regras específicas para o h2 e para o P contidos em destaque
 
@@ -141,4 +149,16 @@ clamp(
 
 .destaque p {
     font-size: clamp(1.5rem, 3vw, 3rem);
+}
+
+/* Regra de animação */
+@keyframes animaDestaque {
+    /* Dê (estado inicial, como começa) */
+    from {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+ 
+    /* Para (estado final, como termina) */
+    tp { opacity: 1; }
 }
