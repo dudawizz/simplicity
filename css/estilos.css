@@ -124,6 +124,10 @@ nav h2 a:hover, nav h2 a:focus, .links-menu a:hover, .links-menu a:focus {
     /* Etapa 2: aplicar a duração */
     animation-name: animaDestaque;
     animation-duration: 2s;
+
+    /* Aceleração/Desaceleração 
+    animation-timing-function    
+    */
 }
 
 
