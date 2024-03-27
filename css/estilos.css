@@ -47,6 +47,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 12vh;
 }
 
 nav h2 a {
@@ -106,7 +107,7 @@ nav h2 a:hover, nav h2 a:focus, .links-menu a:hover, .links-menu a:focus {
 
 
 .destaque { 
-    height: 250px;
+    height: 88vh;
     display: flex;
     flex-direction: column;
     background-image: url(../imagens/fundo-destaque.jpg);
