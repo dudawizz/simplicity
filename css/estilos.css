@@ -126,3 +126,19 @@ nav h2 a:hover, nav h2 a:focus, .links-menu a:hover, .links-menu a:focus {
     text-align: center;
 }
 */
+
+/* Sobre a função clamp() Função útil para redimensionamento responsivo de acordo com certos critérios. 
+
+clamp(
+    tamanhoMínimo
+    tamanhoIdeal/Variável/Responsivo
+    tamanhoMáximo
+);*/
+
+.destaque h2 {
+    font-size: clamp(3rem, 10vw, 7rem);
+}
+
+.destaque p {
+    font-size: clamp(1.5rem, 3vw, 3rem);
+}
