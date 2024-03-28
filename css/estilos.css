@@ -166,3 +166,122 @@ clamp(
     /* Para (estado final, como termina) */
     tp { opacity: 1; }
 }
+
+article h2 {
+    padding: 1rem;
+    font-size: 1.4rem;
+    font-family: Raleway, sans-serif;
+    color: var(--cor-titulo)
+}
+
+.front-end, .historia, .localizacao {
+    text-align: center;
+}
+
+article p {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+}
+
+/* por padrão a tag address vem em itálico, nas linhas abaixo, tiramos esse tipo de estilo. */
+address {
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+/* Exercício dia 28/03/2024 */
+.historia {
+    height: 50vh;
+    background-image: url(../imagens/fundo-madeira.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    /* o cover é para fazer a imagem cobrir área, e ainda dá uma esticada na imagem. */
+}
+
+.historia h2 { 
+    color: var(--cor-clara);
+    text-shadow: 5px 5px 2px gray;
+}
+
+.historia iframe {
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 2rem;
+}
+
+.localizacao iframe {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.limitador {
+    width: 95vw;
+    margin: auto;
+}
+
+footer {
+    background-color: var(--cor-escura);
+    color: var(--cor-clara);
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem 2rem;
+    font-weight: bold;
+}
+
+/* Regras para as páginas Produtos, Serviços e Contato */
+
+.conteudo {
+    background-color: var(--cor-intermediaria);
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.conteudo h2 {
+    padding-left: 0;
+    font-size: 1.8rem;
+    border-bottom: solid 1px;
+    margin-bottom: 1rem;
+}
+
+table {
+    border: solid 4px;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    border-collapse: collapse;
+    /* este border-collapse: collapse, tira a "duplicação" que cada célula faz ao colocar a borda. */
+}
+
+caption {
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+th, td {
+    border: solid 1px;
+}
+
+th {
+    background-color: var(--cor-escura);
+    color: var(--cor-clara);
+    border-color: var(--cor-escura);
+    padding: 0.8rem;
+}
+td {padding: 0.5rem;}
+
+.tdias{
+    text-align: center;
+}
+
+.tvalor{
+    text-align: right;
+}
+
+/* pseudo-classe :nth-child(odd) são pares */
+tr:nth-child(odd){
+    background-color: var(--cor-clara);
+}
