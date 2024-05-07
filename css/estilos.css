@@ -41,18 +41,20 @@ h1 a {
     border-radius: 4px;
 }
 
-/* Limitador da div contida do header */
+/* Limitador da div contida no header */
 header .limitador {
     height: 12vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* background-color: yellow; */
 }
 
 header {
     position: sticky;
     top: 0;
     background-color: var(--cor-clara);
+    z-index: 100;
 }
 
 nav h2 a { 
@@ -334,25 +336,91 @@ td:last-child::before {
     content: "R$ ";
 }
 
-figure .imagem-servico img {
+
+/* Regras para a página Serviços */
+.galeria { text-align: center; }
+
+.galeria img {
     border-radius: 50%;
     transform: scale(0.8);
-    filter: brightness(150%) blur(2px);
+    filter: brightness(150%) blur(1px);
     transition: 0.5s;
 }
 
-figure div {
-    text-align: center;
-}
-
-figure img:hover {
-    transform: scale(1.2);
-    border-radius: 40px;
-    transition: 0.5s;
-    margin: 25px;
-    cursor: pointer;
+.galeria img:hover {
+    transform: scale(1);
     filter: none;
+    border-radius: 10%;
 }
+
+/* Estilos para formulário de contato */
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+input, select, textarea {
+    border: none;
+    padding: 4px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: var(--cor-clara);
+}
+
+/* Se quiser mudar o outline (tipo de borda 
+que aparece quando o campo ganha foco) */
+/* input:focus, select:focus, textarea:focus {
+     outline-width: 5px;
+    outline-color: purple;
+    outline-style: dashed; 
+} */
+
+textarea { height: auto; }
+
+form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    width: 30%;
+}
+
+/* Pseudo-classe :not()
+Permite criar exceções para uma regra.
+Neste exemplo, estamos aplicando 70% de largura para tudo (*) dentro do 'form div'
+EXCETO o 'label' */
+form div *:not(label) { width: 70%; }
+
+button {
+    background-color: var(--cor-escura);
+    color: var(--cor-clara);
+    border: none;
+    font-weight: bold;
+    padding: 1rem 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+button:hover, button:focus {
+    background-color: var(--cor-clara);
+    color: var(--cor-escura);
+    box-shadow: var(--cor-escura) 0 0 2px;
+}
+
+#cep { width: 60%; }
+
+#buscar { 
+    width: 39%;
+    padding: 12px;
+}
+
+.campos-restantes { display: none; }
 
 @media screen and (min-width: 570px) {
     nav h2 { display: none; }
@@ -366,4 +434,3 @@ figure img:hover {
     html { font-size: 18px; }
     .limitador { max-width: 1000px; }
 }
-
