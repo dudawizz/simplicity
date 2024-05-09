@@ -10,52 +10,51 @@
 
 <body>
     <header>
-        <div class="limitador">
-            <h1><a href="index.html">Simplicity</a></h1>
-            <nav>
-                <h2><a href="">Menu &equiv;</a></h2>
-                <ul class="links-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="produtos.html">Produtos</a></li>
-                    <li><a href="servicos.html">Serviços</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <div class="limitador">
+        <h1><a href="index.html">Simplicity</a></h1>
+        <nav>
+            <h2><a href="">Menu &equiv;</a></h2>
+            <ul class="links-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-    <main>
-        <article class="conteudo limitador">
-            <h2>Contato</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quo esse laborum molestias facilis
-                assumenda libero rerum! Debitis facere assumenda in reiciendis quae, aut temporibus porro? Inventore
-                vero quis voluptatem?</p>
+<main>
+    <article class="conteudo limitador">
+        <h2>Contato</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quo esse laborum molestias facilis
+        assumenda libero rerum! Debitis facere assumenda in reiciendis quae, aut temporibus porro? Inventore vero quis voluptatem?</p>
 
             <!-- Método: maneira como os dados serão
             transmitidos. Opções: get (envia pela URL), 
             post (envia no corpo do formulário [mais seguro para
             formulários de cadastro em geral]) -->
-            <form action="" method="post" autocomplete="off">
-                <div>
-                    <label for="nome">Nome:</label>
-                    <input required placeholder="Digite o nome completo" type="text" name="nome" id="nome">
-                </div>
+    <form action="" method="post" autocomplete="off">
+        <div>
+        <label for="nome">Nome:</label>
+            <input required placeholder="Digite o nome completo" type="text" name="nome" id="nome">
+        </div>
 
-                <div>
-                    <label for="email">E-mail:</label>
-                    <input required type="email" name="email" id="email">
-                </div>
+        <div>
+            <label for="email">E-mail:</label>
+            <input required type="email" name="email" id="email">
+        </div>
 
-                <div>
-                    <label for="nascimento">Data de nascimento:</label>
-                    <input type="date" name="nascimento" id="nascimento">
-                </div>
+        <div>
+            <label for="nascimento">Data de nascimento:</label>
+            <input type="date" name="nascimento" id="nascimento">
+        </div>
 
                 <!-- INÍCIO HTML PARA CEP/ENDEREÇO -->
-                <div>
-                    <label for="cep">CEP: <br>
-                    <span id="status"></span></label>
-                    <div id="area-do-cep">
+        <div>
+            <label for="cep">CEP: <br>
+            <span id="status"></span></label>
+        <div id="area-do-cep">
                         <!-- Usamos inputmode numerica para que
                         o teclado virtual mostre números 
                         e para que não seja mostrado botões adicionais
@@ -119,6 +118,12 @@
             para fins educacionais &copy; <time>2024</time> </p>
     </footer>
 
+    <!-- Instalação/Importação da biblioteca JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Instalçao/Importação do plugin jQuery Mask -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    
     <script src="js/menu.js"></script>
     <script src="js/co ntato.js"></script>
 </body>
